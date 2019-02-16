@@ -25,7 +25,7 @@ SECRET_KEY = '_7rqospsj)4k5n=bm@)8*+%^(la^)rr)ahw7tts)fx0o6^(5m_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', ' . pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'michellevlad.pythonanywhere.com']
 
 
 # Application definition
@@ -121,6 +121,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+<<<<<<< HEAD
 MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+=======
+STATICFILES_DIRS = [
+    #os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "blog/static"),
+]
+>>>>>>> 31da7cc3dedaed3d29296726a5d8c4d1d4c2e092
